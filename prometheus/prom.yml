@@ -2,13 +2,12 @@ global:
   scrape_interval: 15s # Default scrape interval
 
 scrape_configs:
-  - job_name: 'prometheus'
+  - job_name: "prometheus"
     static_configs:
-      - targets: ['localhost:9090']
+      - targets: ["localhost:9090"]
 
-   - job_name: 'go-gin-api'
+  - job_name: "go-gin-api"
     static_configs:
-      - targets: ['gman-production.up.railway.app:8080']
-    metrics_path: '/metrics'
+      - targets: ["gman-production.up.railway.app:8080"]
+    metrics_path: "/metrics"
     scrape_interval: 15s
-
