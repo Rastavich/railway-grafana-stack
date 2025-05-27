@@ -8,6 +8,6 @@ scrape_configs:
 
   - job_name: "go-gin-api"
     static_configs:
-      - targets: ["gman-production.up.railway.app/metrics"]
+      - targets: ["gman-production.up.railway.app"]
     metrics_path: "/metrics"
     scrape_interval: 15s
