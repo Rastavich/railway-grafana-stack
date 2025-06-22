@@ -10,4 +10,4 @@ scrape_configs:
     static_configs:
       - targets: ["gman-production.up.railway.app"] #maybe
     metrics_path: "/metrics"
-    scrape_interval: 15s
+    scrape_interval: 30m
